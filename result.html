@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Home Page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<style>
+    html,
+    body {
+      overflow-x: hidden;
+      /* Prevent scroll on narrow devices */
+    }
+  
+    body {
+      padding-top: 56px;
+    }
+  
+    @media (max-width: 991.98px) {
+      .offcanvas-collapse {
+        position: fixed;
+        top: 56px;
+        /* Height of navbar */
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: #343a40;
+        transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+        transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+        transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+      }
+  
+      .offcanvas-collapse.open {
+        visibility: visible;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+      }
+    }
+  
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+  
+    .nav-scroller .nav {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      color: rgba(255, 255, 255, .75);
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    .nav-underline .nav-link {
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+      font-size: .875rem;
+      color: #6c757d;
+    }
+  
+    .nav-underline .nav-link:hover {
+      color: #007bff;
+    }
+  
+    .nav-underline .active {
+      font-weight: 500;
+      color: #343a40;
+    }
+  
+    .text-white-50 {
+      color: rgba(255, 255, 255, .5);
+    }
+  
+    .bg-purple {
+      background-color: #6f42c1;
+    }
+  
+    .lh-100 {
+      line-height: 1;
+    }
+  
+    .lh-125 {
+      line-height: 1.25;
+    }
+  
+    .lh-150 {
+      line-height: 1.5;
+    }
+  
+    .blog-header {
+      line-height: 1;
+      border-bottom: 1px solid #e5e5e5;
+    }
+  
+   
+  
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    }
+  
+   
+   
+  
+  
+    
+  </style>
+      <!-- Custom styles for this template -->
+      <link href="offcanvas.css" rel="stylesheet">
+    </head>
+    <body class="bg-light" data-gr-c-s-loaded="true">
+      <!-- nav started -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light blog-header py-3">
+      <a class="navbar-brand mr-auto mr-lg-0" href="#"
+        style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Query
+        Desk</a>
+      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="navbar-collapse offcanvas-collapse bg-light " id="navbarsExampleDefault">
+        <ul class="navbar-nav  mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Notifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Switch account</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Settings</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+         <button class="btn btn-outline-success my-2 my-sm-0"type="button"  data-toggle="modal" data-target="#exampleModalCenter">Add questions</button>
+        </form>
+      </div>
+    </nav>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-dark" id="exampleModalLongTitle">Add questions</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <form  class="text-dark">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1"> Q title</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                   
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="exampleFormControlTextarea1" >Q body</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                 
+                </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">save question</button>
+          </div>
+        </div>
+      </div>
+  </div>
+    <!-- NAVBAR  ENDED -->
+<br> <br>
+   
+
+
+<div class="container">
+    <h3
+      style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+     Search Result</h3>
+      <!-- OUTER CARD WITH GREEN BORDER STARTED -->
+    <div class="card mb-3 rounded shadow-sm bg-light " style="border-width: 2px; border-color:#5c96b8 ;">
+
+      <div class="card-title text-dark ">
+        <div class="card-body ">
+          <!-- INNER  CARD WITH GREEN BG STARTED-->
+          <div class="card mb-3 rounded shadow-sm alert-info " style=" border-left: 5px solid #5c96b8 ;">
+            <div class="card-title text-dark ">
+              <div class="card-body  " >
+                <p class="media-body" style="font-size: 25px;">
+                  <!-- put Short Ans here -->
+                  <strong class="d-block ">Short Ans : <strong>math ka question <strong style="font-size: 15px;">(posted
+                        by)</strong></strong></strong>
+                </p>
+                <div class="media text-muted pt-0">
+                  <p class="media-body pb-0   ">
+                    <!-- put Descriptive Ans here -->
+                    <strong class="d-block text-dark" style="font-size: 17px;">Descriptive Ans : <strong>what is your
+                        name?</strong></strong>
+                    
+                  </p>
+
+                </div>
+
+              </div>
+
+
+            </div>
+          </div> <!-- INNER  CARD WITH GREEN BG ENDED-->
+
+
+        </div>
+
+
+      </div>
+    </div><!-- OUTER CARD WITH GREEN BORDER  ENDED-->
+  </div><!-- ANSWERS CONTAINER ENDED -->
+
+
+
+
+
+
+</body>
+<script>
+  $(function () {
+'use strict'
+
+$('[data-toggle="offcanvas"]').on('click', function () {
+  $('.offcanvas-collapse').toggleClass('open')
+})
+})
+
+</script>
+</html>
